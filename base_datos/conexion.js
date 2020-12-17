@@ -1,10 +1,11 @@
 const mysql = require('mysql');
+const conexionData = require('./conexionData');
 
 var mysqlConexion = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : "",
-    database : "delilahdb",
+    host : conexionData.conf_db_host,
+    user : conexionData.conf_user,
+    password : conexionData.conf_password,
+    database : conexionData.conf_db_name,
     multipleStatements: true
 });
 
