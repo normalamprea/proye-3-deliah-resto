@@ -9,7 +9,6 @@ Proyecto #3 curso de Desarrollo Web Full Stack en Acámica
 - Express
 - JWT para autenticación via Token
 - MySQL
-- Sequelize
 - Postman para manejo de endpoints y testing
 
 Crear el backend de una app para un restaurante de comida "Delilah Restó", diseñando la arquitectura, bases de datos y endpoints.
@@ -41,6 +40,15 @@ npm install
 - Abrir el panel de control del servicio MySQL
 - Generar una nueva base de datos llamada `delilahdb`
 - Abrir el archivo en `/base_datos/Scripts.sql` y dentro del `panel de control` de la base de datos ejecutar la serie de queries del archivo o importar el mismo.
+
+### Parametrizacion de la base de datos
+
+- El archivo q tiene la configuracion de la DB es el conexionData.js, en el archivo se encuentran las siguientes variables:
+- La variable de nombre de servidor es: conf_db_host
+- La variable de nombre de la DB es: conf_db_name
+- La variable con el nombre del usuario es: conf_user
+- La variable con la contraseña o clave es: conf_password
+- La variable con el puerto es: conf_port
 
 ### 4 - Iniciando el servidor
 
